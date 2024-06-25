@@ -215,9 +215,14 @@ type SecretStoreProvider struct {
 	// Volcengine configures this store to sync secrets using the Volcengine provider
 	// +optional
 	Volcengine *VolcengineProvider `json:"volcengine,omitempty"`
+
 	// Ngrok configures this store to sync secrets using the ngrok provider.
 	// +optional
 	Ngrok *NgrokProvider `json:"ngrok,omitempty"`
+
+	// KeyHub configures this store to sync secrets using the KeyHub provider
+	// +optional
+	KeyHub *KeyHubProvider `json:"keyhub,omitempty"`
 }
 
 // CAProviderType defines the type of provider for certificate authority.

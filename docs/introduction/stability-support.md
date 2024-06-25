@@ -93,7 +93,7 @@ The following table describes the stability level of each provider and who's res
 | [Cloud.ru](https://external-secrets.io/latest/provider/cloudru)                                            | alpha     | [@default23](https://github.com/default23)                                                          |
 | [Volcengine](https://external-secrets.io/latest/provider/volcengine)                                       | alpha     | [@kevinyancn](https://github.com/kevinyancn)                                                        |
 | [ngrok](https://external-secrets.io/latest/provider/ngrok)                                                 | alpha     | [@jonstacks](https://github.com/jonstacks)                                                          |
-
+| [Topicus KeyHub](https://external-secrets.io/latest/provider/keyhub)                                             |  alpha    | [@sboschman](https://github.com/sboschman)                                                          |
 
 ## Provider Feature Support
 
@@ -131,8 +131,12 @@ The following table show the support for features across different providers.
 | Bitwarden Secrets Manager |      x       |              |                      |                         |        x         |      x      |              x              |
 | Previder                  |      x       |              |                      |                         |        x         |             |                             |
 | Cloud.ru                  |      x       |      x       |                      |            x            |        x         |             |              x              |
+<<<<<<< HEAD
 | Volcengine                |              |              |                      |                         |        x         |             |                             |
 | ngrok                     |              |              |                      |                         |        x         |      x      |                             |
+=======
+| Topicus KeyHub            |      x       |              |                      |                         |        x         |             |                             |
+>>>>>>> a84832d13 (feat(provider/keyhub): add support for Topicus KeyHub as secret store)
 
 ## Support Policy
 
