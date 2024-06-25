@@ -377,3 +377,14 @@ require (
 	k8s.io/klog/v2 v2.130.1
 	sigs.k8s.io/json v0.0.0-20250730193827-2d320260d730 // indirect
 )
+
+// KeyHub provider
+require (
+	github.com/cjlapao/common-go v0.0.39 // indirect
+	github.com/coreos/go-oidc/v3 v3.10.0 // indirect
+	github.com/microsoft/kiota-abstractions-go v1.6.0
+	github.com/microsoft/kiota-http-go v1.4.1 // indirect
+	github.com/microsoft/kiota-serialization-json-go v1.0.7 // indirect
+	github.com/std-uritemplate/std-uritemplate/go v1.0.1 // indirect
+	github.com/topicuskeyhub/sdk-go v0.34.0
+)
