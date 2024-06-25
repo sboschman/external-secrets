@@ -1,0 +1,25 @@
+{% raw %}
+apiVersion: external-secrets.io/v1beta1
+kind: ExternalSecret
+metadata:
+  name: "basic-auth-1"
+spec:
+  secretStoreRef:
+    name: keyhub
+    kind: ClusterSecretStore
+  target:
+    template:
+      type: kubernetes.io/basic-auth
+      data:
+        username: "{{ .username }}"
+        password: "{{ .password }}"
+  data:
+    - secretKey: username
+      remoteRef:
+        key: <KeyHub vault record UUID>
+        property: username
+    - secretKey: password
+      remoteRef:
+        key: <KeyHub vault record UUID>
+        property: password
+{% endraw %}
