@@ -36,6 +36,7 @@ import (
 	_ "github.com/external-secrets/external-secrets/pkg/provider/ibm"
 	_ "github.com/external-secrets/external-secrets/pkg/provider/infisical"
 	_ "github.com/external-secrets/external-secrets/pkg/provider/keepersecurity"
+	_ "github.com/external-secrets/external-secrets/pkg/provider/keyhub"
 	_ "github.com/external-secrets/external-secrets/pkg/provider/kubernetes"
 	_ "github.com/external-secrets/external-secrets/pkg/provider/onboardbase"
 	_ "github.com/external-secrets/external-secrets/pkg/provider/onepassword"
