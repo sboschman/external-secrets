@@ -142,6 +142,7 @@ nav:
       - Fortanix: provider/fortanix.md
       - Infisical: provider/infisical.md
       - Previder: provider/previder.md
+      - Topicus KeyHub: provider/keyhub.md
   - Examples:
       - FluxCD: examples/gitops-using-fluxcd.md
       - Anchore Engine: examples/anchore-engine-credentials.md

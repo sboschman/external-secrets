@@ -5053,6 +5053,76 @@ string
 </tr>
 </tbody>
 </table>
+<h3 id="external-secrets.io/v1beta1.KeyHubAuth">KeyHubAuth
+</h3>
+<p>
+(<em>Appears on:</em>
+<a href="#external-secrets.io/v1beta1.KeyHubProvider">KeyHubProvider</a>)
+</p>
+<p>
+</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>secretRef</code></br>
+<em>
+<a href="https://pkg.go.dev/github.com/external-secrets/external-secrets/apis/meta/v1#SecretKeySelector">
+External Secrets meta/v1.SecretKeySelector
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="external-secrets.io/v1beta1.KeyHubProvider">KeyHubProvider
+</h3>
+<p>
+(<em>Appears on:</em>
+<a href="#external-secrets.io/v1beta1.SecretStoreProvider">SecretStoreProvider</a>)
+</p>
+<p>
+</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>issuer</code></br>
+<em>
+string
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>auth</code></br>
+<em>
+<a href="#external-secrets.io/v1beta1.KeyHubAuth">
+KeyHubAuth
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
 <h3 id="external-secrets.io/v1beta1.KubernetesAuth">KubernetesAuth
 </h3>
 <p>
@@ -7078,6 +7148,20 @@ BeyondtrustProvider
 <td>
 <em>(Optional)</em>
 <p>Beyondtrust configures this store to sync secrets using Password Safe provider.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>keyhub</code></br>
+<em>
+<a href="#external-secrets.io/v1beta1.KeyHubProvider">
+KeyHubProvider
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>KeyHub configures this store to sync secrets using the KeyHub provider</p>
 </td>
 </tr>
 </tbody>
