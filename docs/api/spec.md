@@ -1479,10 +1479,10 @@ External Secrets meta/v1.SecretKeySelector
 </h3>
 <p>
 (<em>Appears on:</em>
-<a href="#external-secrets.io/v1.AkeylessProvider">AkeylessProvider</a>, 
-<a href="#external-secrets.io/v1.BitwardenSecretsManagerProvider">BitwardenSecretsManagerProvider</a>, 
-<a href="#external-secrets.io/v1.ConjurProvider">ConjurProvider</a>, 
-<a href="#external-secrets.io/v1.KubernetesServer">KubernetesServer</a>, 
+<a href="#external-secrets.io/v1.AkeylessProvider">AkeylessProvider</a>,
+<a href="#external-secrets.io/v1.BitwardenSecretsManagerProvider">BitwardenSecretsManagerProvider</a>,
+<a href="#external-secrets.io/v1.ConjurProvider">ConjurProvider</a>,
+<a href="#external-secrets.io/v1.KubernetesServer">KubernetesServer</a>,
 <a href="#external-secrets.io/v1.VaultProvider">VaultProvider</a>)
 </p>
 <p>
@@ -3280,7 +3280,7 @@ ExternalSecretStatus
 (<code>string</code> alias)</p></h3>
 <p>
 (<em>Appears on:</em>
-<a href="#external-secrets.io/v1.ExternalSecretDataRemoteRef">ExternalSecretDataRemoteRef</a>, 
+<a href="#external-secrets.io/v1.ExternalSecretDataRemoteRef">ExternalSecretDataRemoteRef</a>,
 <a href="#external-secrets.io/v1.ExternalSecretFind">ExternalSecretFind</a>)
 </p>
 <p>
@@ -3472,7 +3472,7 @@ The generator returns a static map of values</p>
 </h3>
 <p>
 (<em>Appears on:</em>
-<a href="#external-secrets.io/v1.ExternalSecretData">ExternalSecretData</a>, 
+<a href="#external-secrets.io/v1.ExternalSecretData">ExternalSecretData</a>,
 <a href="#external-secrets.io/v1.ExternalSecretDataFromRemoteRef">ExternalSecretDataFromRemoteRef</a>)
 </p>
 <p>
@@ -3569,7 +3569,7 @@ ExternalSecretDecodingStrategy
 (<code>string</code> alias)</p></h3>
 <p>
 (<em>Appears on:</em>
-<a href="#external-secrets.io/v1.ExternalSecretDataRemoteRef">ExternalSecretDataRemoteRef</a>, 
+<a href="#external-secrets.io/v1.ExternalSecretDataRemoteRef">ExternalSecretDataRemoteRef</a>,
 <a href="#external-secrets.io/v1.ExternalSecretFind">ExternalSecretFind</a>)
 </p>
 <p>
@@ -3917,7 +3917,7 @@ string
 </h3>
 <p>
 (<em>Appears on:</em>
-<a href="#external-secrets.io/v1.ClusterExternalSecretSpec">ClusterExternalSecretSpec</a>, 
+<a href="#external-secrets.io/v1.ClusterExternalSecretSpec">ClusterExternalSecretSpec</a>,
 <a href="#external-secrets.io/v1.ExternalSecret">ExternalSecret</a>)
 </p>
 <p>
@@ -4786,7 +4786,7 @@ If not specified, it fetches information from the metadata server</p>
 </h3>
 <p>
 (<em>Appears on:</em>
-<a href="#external-secrets.io/v1.StoreGeneratorSourceRef">StoreGeneratorSourceRef</a>, 
+<a href="#external-secrets.io/v1.StoreGeneratorSourceRef">StoreGeneratorSourceRef</a>,
 <a href="#external-secrets.io/v1.StoreSourceRef">StoreSourceRef</a>)
 </p>
 <p>
@@ -5466,6 +5466,76 @@ External Secrets meta/v1.SecretKeySelector
 <code>folderID</code></br>
 <em>
 string
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="external-secrets.io/v1.KeyHubAuth">KeyHubAuth
+</h3>
+<p>
+(<em>Appears on:</em>
+<a href="#external-secrets.io/v1.KeyHubProvider">KeyHubProvider</a>)
+</p>
+<p>
+</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>secretRef</code></br>
+<em>
+<a href="https://pkg.go.dev/github.com/external-secrets/external-secrets/apis/meta/v1#SecretKeySelector">
+External Secrets meta/v1.SecretKeySelector
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="external-secrets.io/v1.KeyHubProvider">KeyHubProvider
+</h3>
+<p>
+(<em>Appears on:</em>
+<a href="#external-secrets.io/v1.SecretStoreProvider">SecretStoreProvider</a>)
+</p>
+<p>
+</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>issuer</code></br>
+<em>
+string
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>auth</code></br>
+<em>
+<a href="#external-secrets.io/v1.KeyHubAuth">
+KeyHubAuth
+</a>
 </em>
 </td>
 <td>
@@ -7696,16 +7766,27 @@ BeyondtrustProvider
 </tr>
 <tr>
 <td>
+<<<<<<< HEAD
 <code>cloudrusm</code></br>
 <em>
 <a href="#external-secrets.io/v1.CloudruSMProvider">
 CloudruSMProvider
+=======
+<code>keyhub</code></br>
+<em>
+<a href="#external-secrets.io/v1beta1.KeyHubProvider">
+KeyHubProvider
+>>>>>>> a4e618e1 (feat(provider/keyhub): add support for Topicus KeyHub as secret store)
 </a>
 </em>
 </td>
 <td>
 <em>(Optional)</em>
+<<<<<<< HEAD
 <p>CloudruSM configures this store to sync secrets using the Cloud.ru Secret Manager provider</p>
+=======
+<p>KeyHub configures this store to sync secrets using the KeyHub provider</p>
+>>>>>>> a4e618e1 (feat(provider/keyhub): add support for Topicus KeyHub as secret store)
 </td>
 </tr>
 </tbody>
@@ -7714,8 +7795,8 @@ CloudruSMProvider
 </h3>
 <p>
 (<em>Appears on:</em>
-<a href="#external-secrets.io/v1.ExternalSecretSpec">ExternalSecretSpec</a>, 
-<a href="#external-secrets.io/v1.StoreGeneratorSourceRef">StoreGeneratorSourceRef</a>, 
+<a href="#external-secrets.io/v1.ExternalSecretSpec">ExternalSecretSpec</a>,
+<a href="#external-secrets.io/v1.StoreGeneratorSourceRef">StoreGeneratorSourceRef</a>,
 <a href="#external-secrets.io/v1.StoreSourceRef">StoreSourceRef</a>)
 </p>
 <p>
@@ -7797,7 +7878,7 @@ string
 </h3>
 <p>
 (<em>Appears on:</em>
-<a href="#external-secrets.io/v1.ClusterSecretStore">ClusterSecretStore</a>, 
+<a href="#external-secrets.io/v1.ClusterSecretStore">ClusterSecretStore</a>,
 <a href="#external-secrets.io/v1.SecretStore">SecretStore</a>)
 </p>
 <p>
@@ -7883,7 +7964,7 @@ int
 </h3>
 <p>
 (<em>Appears on:</em>
-<a href="#external-secrets.io/v1.ClusterSecretStore">ClusterSecretStore</a>, 
+<a href="#external-secrets.io/v1.ClusterSecretStore">ClusterSecretStore</a>,
 <a href="#external-secrets.io/v1.SecretStore">SecretStore</a>)
 </p>
 <p>
@@ -8932,7 +9013,7 @@ VaultAwsJWTAuth
 </h3>
 <p>
 (<em>Appears on:</em>
-<a href="#external-secrets.io/v1.VaultAwsAuth">VaultAwsAuth</a>, 
+<a href="#external-secrets.io/v1.VaultAwsAuth">VaultAwsAuth</a>,
 <a href="#external-secrets.io/v1.VaultIamAuth">VaultIamAuth</a>)
 </p>
 <p>
@@ -8997,7 +9078,7 @@ see: <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_te
 </h3>
 <p>
 (<em>Appears on:</em>
-<a href="#external-secrets.io/v1.VaultAwsAuth">VaultAwsAuth</a>, 
+<a href="#external-secrets.io/v1.VaultAwsAuth">VaultAwsAuth</a>,
 <a href="#external-secrets.io/v1.VaultIamAuth">VaultIamAuth</a>)
 </p>
 <p>
