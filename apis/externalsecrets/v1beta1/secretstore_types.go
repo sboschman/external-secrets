@@ -180,6 +180,10 @@ type SecretStoreProvider struct {
 	// Infisical configures this store to sync secrets using the Infisical provider
 	// +optional
 	Infisical *InfisicalProvider `json:"infisical,omitempty"`
+
+	// KeyHub configures this store to sync secrets using the KeyHub provider
+	// +optional
+	KeyHub *KeyHubProvider `json:"keyhub,omitempty"`
 }
 
 type CAProviderType string
