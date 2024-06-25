@@ -204,6 +204,10 @@ type SecretStoreProvider struct {
 	// CloudruSM configures this store to sync secrets using the Cloud.ru Secret Manager provider
 	// +optional
 	CloudruSM *CloudruSMProvider `json:"cloudrusm,omitempty"`
+
+	// KeyHub configures this store to sync secrets using the KeyHub provider
+	// +optional
+	KeyHub *KeyHubProvider `json:"keyhub,omitempty"`
 }
 
 type CAProviderType string
