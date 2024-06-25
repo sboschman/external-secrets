@@ -64,6 +64,7 @@ The following table describes the stability level of each provider and who's res
 | [Device42](https://external-secrets.io/latest/provider/device42)                                           |   alpha   |                                                                                                                                                                                         |
 | [Bitwarden Secrets Manager](https://external-secrets.io/latest/provider/bitwarden-secrets-manager)         |   alpha   |                                                                                                                                                  [@skarlso](https://github.com/Skarlso) |
 | [Previder](https://external-secrets.io/latest/provider/previder)                                           |  stable   |                                                                                                                                                [@previder](https://github.com/previder) |
+| [Topicus KeyHub](https://external-secrets.io/latest/provider/keyhub)                                       |  alpha    |                                                                                                                                             [@sboschman](https://github.com/sboschman) |
 
 ## Provider Feature Support
 
@@ -99,6 +100,7 @@ The following table show the support for features across different providers.
 | Device42                  |              |              |                      |                         |        x         |             |                             |
 | Bitwarden Secrets Manager |      x       |              |                      |                         |        x         |      x      |              x              |
 | Previder                  |      x       |              |                      |                         |        x         |             |                             |
+| Topicus KeyHub            |      x       |              |                      |                         |        x         |             |                             |
 
 ## Support Policy
 
