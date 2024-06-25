@@ -163,6 +163,10 @@ type SecretStoreProvider struct {
 
 	// +optional
 	Passbolt *PassboltProvider `json:"passbolt,omitempty"`
+
+	// KeyHub configures this store to sync secrets using the KeyHub provider
+	// +optional
+	KeyHub *KeyHubProvider `json:"keyhub,omitempty"`
 }
 
 type CAProviderType string
