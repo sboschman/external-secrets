@@ -19,13 +19,12 @@ import (
 	"net/http"
 	"time"
 
-	ctrl "sigs.k8s.io/controller-runtime"
-
-	esv1beta1 "github.com/external-secrets/external-secrets/apis/externalsecrets/v1beta1"
-
 	keyhub "github.com/topicuskeyhub/sdk-go"
 	keyhubmodels "github.com/topicuskeyhub/sdk-go/models"
 	keyhubreq "github.com/topicuskeyhub/sdk-go/vaultrecord"
+	ctrl "sigs.k8s.io/controller-runtime"
+
+	esv1beta1 "github.com/external-secrets/external-secrets/apis/externalsecrets/v1beta1"
 )
 
 var logger = ctrl.Log.WithName("provider").WithName("keyhub")

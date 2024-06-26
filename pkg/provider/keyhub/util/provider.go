@@ -18,9 +18,10 @@ import (
 	"context"
 	"fmt"
 
+	kubeClient "sigs.k8s.io/controller-runtime/pkg/client"
+
 	esv1beta1 "github.com/external-secrets/external-secrets/apis/externalsecrets/v1beta1"
 	"github.com/external-secrets/external-secrets/pkg/utils/resolvers"
-	kubeClient "sigs.k8s.io/controller-runtime/pkg/client"
 )
 
 const (
