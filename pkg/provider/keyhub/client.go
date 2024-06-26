@@ -21,6 +21,7 @@ import (
 	"strconv"
 	"time"
 
+	keyhubmodels "github.com/topicuskeyhub/sdk-go/models"
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/utils/keymutex"
 	kubeClient "sigs.k8s.io/controller-runtime/pkg/client"
@@ -29,7 +30,6 @@ import (
 	"github.com/external-secrets/external-secrets/pkg/cache"
 	khClient "github.com/external-secrets/external-secrets/pkg/provider/keyhub/client"
 	"github.com/external-secrets/external-secrets/pkg/provider/keyhub/util"
-	keyhubmodels "github.com/topicuskeyhub/sdk-go/models"
 )
 
 var (
