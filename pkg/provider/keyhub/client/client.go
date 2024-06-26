@@ -20,6 +20,7 @@ import (
 	"time"
 
 	keyhub "github.com/topicuskeyhub/sdk-go"
+	keyhubreqi "github.com/topicuskeyhub/sdk-go/info"
 	keyhubmodels "github.com/topicuskeyhub/sdk-go/models"
 	keyhubreq "github.com/topicuskeyhub/sdk-go/vaultrecord"
 	ctrl "sigs.k8s.io/controller-runtime"
@@ -42,6 +43,10 @@ func NewKeyHubClient(issuer, clientID, clientSecret string) (*KeyHubClient, erro
 	return &KeyHubClient{
 		client: keyhub.NewKeyHubClient(adapter),
 	}, nil
+}
+
+func (c *KeyHubClient) GetInfo(ctx context.Context) (keyhubmodels.SimpleVersionInfoable, error) {
+	return c.client.Info().Get(ctx, &keyhubreqi.InfoRequestBuilderGetRequestConfiguration{})
 }
 
 func (c *KeyHubClient) GetVaultRecordLastModifiedAt(ctx context.Context, uuid string) (*time.Time, error) {

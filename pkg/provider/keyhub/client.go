@@ -44,16 +44,22 @@ type client struct {
 }
 
 func NewClient(ctx context.Context, cfg *esv1beta1.KeyHubProvider, kube kubeClient.Client, storeKind, namespace string) (*client, error) {
-	logger.Info("creating KeyHub client", "issuer", cfg.Issuer)
 	clientID, clientSecret, err := util.GetKeyHubAuth(ctx, cfg.Auth, kube, storeKind, namespace)
 	if err != nil {
 		return nil, err
 	}
+	logger.V(1).Info("creating KeyHub client", "issuer", cfg.Issuer, "client", clientID)
 
 	khClient, err := khClient.NewKeyHubClient(cfg.Issuer, clientID, clientSecret)
 	if err != nil {
 		return nil, err
 	}
+
+	info, err := khClient.GetInfo(ctx)
+	if err != nil {
+		return nil, err
+	}
+	logger.Info("KeyHub connection validated", "issuer", cfg.Issuer, "client", clientID, "KeyHub version", info.GetKeyHubVersion())
 
 	// TODO: make mutex and cache size configurable
 	return &client{
