@@ -17,6 +17,7 @@ package keyhub
 
 import (
 	"context"
+	"encoding/base64"
 	"errors"
 	"strconv"
 	"time"
@@ -92,7 +93,7 @@ func (c *client) GetSecret(ctx context.Context, ref esv1beta1.ExternalSecretData
 	case "filename":
 		return []byte(*record.GetFilename()), nil
 	case "file":
-		return []byte(*secret.GetFile()), nil
+		return base64.StdEncoding.DecodeString(*secret.GetFile())
 	case "enddate":
 		return []byte(record.GetEndDate().String()), nil
 	case "comment":
