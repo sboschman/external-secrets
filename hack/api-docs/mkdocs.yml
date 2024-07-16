@@ -119,6 +119,7 @@ nav:
     - Onboardbase: provider/onboardbase.md
     - Password Depot: provider-passworddepot.md
     - Fortanix: provider/fortanix.md
+    - Topicus KeyHub: provider/keyhub.md
   - Examples:
     - FluxCD: examples/gitops-using-fluxcd.md
     - Anchore Engine: examples/anchore-engine-credentials.md
