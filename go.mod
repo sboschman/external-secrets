@@ -82,6 +82,7 @@ require (
 	github.com/keeper-security/secrets-manager-go/core v1.6.3
 	github.com/lestrrat-go/jwx/v2 v2.0.21
 	github.com/maxbrunsfeld/counterfeiter/v6 v6.8.1
+	github.com/microsoft/kiota-abstractions-go v1.6.0
 	github.com/passbolt/go-passbolt v0.7.0
 	github.com/pulumi/esc v0.8.3
 	github.com/scaleway/scaleway-sdk-go v1.0.0-beta.27
@@ -154,7 +155,6 @@ require (
 	github.com/lucasb-eyer/go-colorful v1.2.0 // indirect
 	github.com/mattn/go-localereader v0.0.1 // indirect
 	github.com/mattn/go-runewidth v0.0.15 // indirect
-	github.com/microsoft/kiota-abstractions-go v1.6.0 // indirect
 	github.com/microsoft/kiota-http-go v1.4.1 // indirect
 	github.com/microsoft/kiota-serialization-json-go v1.0.7 // indirect
 	github.com/mitchellh/go-ps v1.0.0 // indirect
