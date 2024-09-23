@@ -115,6 +115,10 @@ func (c *client) SecretExists(_ context.Context, _ esv1beta1.PushSecretRemoteRef
 }
 
 func (c *client) Validate() (esv1beta1.ValidationResult, error) {
+	_, err := c.client.GetInfo(context.TODO())
+	if err != nil {
+		return esv1beta1.ValidationResultError, err
+	}
 	return esv1beta1.ValidationResultReady, nil
 }
 
@@ -300,7 +304,7 @@ func (c *client) getVaultRecordProperties(record keyhubmodels.VaultVaultRecordab
 	if fetchAll || property == "password" {
 		if secret.GetPassword() != nil {
 			data["password"] = []byte(*secret.GetPassword())
-		} else {
+		} else if !fetchAll {
 			data["password"] = []byte("")
 		}
 	}
