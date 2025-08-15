@@ -224,6 +224,7 @@ require (
 	github.com/sergi/go-diff v1.4.0 // indirect
 	github.com/sirupsen/logrus v1.9.3 // indirect
 	github.com/skeema/knownhosts v1.3.1 // indirect
+	github.com/std-uritemplate/std-uritemplate/go/v2 v2.0.5 // indirect
 	github.com/tetratelabs/wabin v0.0.0-20230304001439-f6f874872834 // indirect
 	github.com/tetratelabs/wazero v1.9.0 // indirect
 	github.com/texttheater/golang-levenshtein v1.0.1 // indirect
@@ -363,11 +364,9 @@ require (
 
 // KeyHub provider
 require (
-	github.com/cjlapao/common-go v0.0.39 // indirect
-	github.com/coreos/go-oidc/v3 v3.10.0 // indirect
-	github.com/microsoft/kiota-abstractions-go v1.6.0
-	github.com/microsoft/kiota-http-go v1.4.1 // indirect
-	github.com/microsoft/kiota-serialization-json-go v1.0.7 // indirect
-	github.com/std-uritemplate/std-uritemplate/go v1.0.1 // indirect
-	github.com/topicuskeyhub/sdk-go v0.34.0
+	github.com/coreos/go-oidc/v3 v3.14.1 // indirect
+	github.com/microsoft/kiota-abstractions-go v1.9.3
+	github.com/microsoft/kiota-http-go v1.5.4 // indirect
+	github.com/microsoft/kiota-serialization-json-go v1.1.2 // indirect
+	github.com/topicuskeyhub/sdk-go v0.42.0
 )
