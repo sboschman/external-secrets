@@ -3408,7 +3408,6 @@ func (in *SecretStoreProvider) DeepCopyInto(out *SecretStoreProvider) {
 		*out = new(CloudruSMProvider)
 		(*in).DeepCopyInto(*out)
 	}
-<<<<<<< HEAD
 	if in.Volcengine != nil {
 		in, out := &in.Volcengine, &out.Volcengine
 		*out = new(VolcengineProvider)
@@ -3417,11 +3416,11 @@ func (in *SecretStoreProvider) DeepCopyInto(out *SecretStoreProvider) {
 	if in.Ngrok != nil {
 		in, out := &in.Ngrok, &out.Ngrok
 		*out = new(NgrokProvider)
-=======
+		(*in).DeepCopyInto(*out)
+	}
 	if in.KeyHub != nil {
 		in, out := &in.KeyHub, &out.KeyHub
 		*out = new(KeyHubProvider)
->>>>>>> a84832d13 (feat(provider/keyhub): add support for Topicus KeyHub as secret store)
 		(*in).DeepCopyInto(*out)
 	}
 }
