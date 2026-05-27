@@ -227,6 +227,10 @@ type SecretStoreProvider struct {
 	// NebiusMysterybox configures this store to sync secrets using NebiusMysterybox provider
 	// +optional
 	NebiusMysterybox *NebiusMysteryboxProvider `json:"nebiusmysterybox,omitempty"`
+
+	// KeyHub configures this store to sync secrets using the KeyHub provider
+	// +optional
+	KeyHub *KeyHubProvider `json:"keyhub,omitempty"`
 }
 
 // CAProviderType defines the type of provider for certificate authority.

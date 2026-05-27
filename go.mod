@@ -39,6 +39,7 @@ replace (
 	github.com/external-secrets/external-secrets/providers/v1/ibm => ./providers/v1/ibm
 	github.com/external-secrets/external-secrets/providers/v1/infisical => ./providers/v1/infisical
 	github.com/external-secrets/external-secrets/providers/v1/keepersecurity => ./providers/v1/keepersecurity
+	github.com/external-secrets/external-secrets/providers/v1/keyhub => ./providers/v1/keyhub
 	github.com/external-secrets/external-secrets/providers/v1/kubernetes => ./providers/v1/kubernetes
 	github.com/external-secrets/external-secrets/providers/v1/nebius => ./providers/v1/nebius
 	github.com/external-secrets/external-secrets/providers/v1/ngrok => ./providers/v1/ngrok
@@ -152,6 +153,7 @@ require (
 	github.com/external-secrets/external-secrets/providers/v1/ibm v0.0.0-00010101000000-000000000000
 	github.com/external-secrets/external-secrets/providers/v1/infisical v0.0.0-00010101000000-000000000000
 	github.com/external-secrets/external-secrets/providers/v1/keepersecurity v0.0.0-00010101000000-000000000000
+	github.com/external-secrets/external-secrets/providers/v1/keyhub v0.0.0-00010101000000-000000000000
 	github.com/external-secrets/external-secrets/providers/v1/kubernetes v0.0.0-00010101000000-000000000000
 	github.com/external-secrets/external-secrets/providers/v1/nebius v0.0.0-00010101000000-000000000000
 	github.com/external-secrets/external-secrets/providers/v1/ngrok v0.0.0-00010101000000-000000000000
@@ -243,6 +245,7 @@ require (
 	github.com/cloudflare/circl v1.6.3 // indirect
 	github.com/cloudru-tech/iam-sdk v1.0.4 // indirect
 	github.com/cloudru-tech/secret-manager-sdk v1.1.1 // indirect
+	github.com/coreos/go-oidc/v3 v3.18.0 // indirect
 	github.com/cyberark/conjur-api-go v0.13.8 // indirect
 	github.com/cyphar/filepath-securejoin v0.6.1 // indirect
 	github.com/danieljoos/wincred v1.2.3 // indirect
@@ -317,6 +320,9 @@ require (
 	github.com/lucasb-eyer/go-colorful v1.3.0 // indirect
 	github.com/mattn/go-localereader v0.0.1 // indirect
 	github.com/mattn/go-runewidth v0.0.19 // indirect
+	github.com/microsoft/kiota-abstractions-go v1.9.4 // indirect
+	github.com/microsoft/kiota-http-go v1.5.6 // indirect
+	github.com/microsoft/kiota-serialization-json-go v1.1.2 // indirect
 	github.com/mitchellh/go-ps v1.0.0 // indirect
 	github.com/mitchellh/go-wordwrap v1.0.1 // indirect
 	github.com/muesli/ansi v0.0.0-20230316100256-276c6243b2f6 // indirect
@@ -347,11 +353,13 @@ require (
 	github.com/sirupsen/logrus v1.9.3 // indirect
 	github.com/skeema/knownhosts v1.3.2 // indirect
 	github.com/spf13/pflag v1.0.10 // indirect
+	github.com/std-uritemplate/std-uritemplate/go/v2 v2.0.8 // indirect
 	github.com/stoewer/go-strcase v1.3.1 // indirect
 	github.com/tetratelabs/wabin v0.0.0-20230304001439-f6f874872834 // indirect
 	github.com/tetratelabs/wazero v1.9.0 // indirect
 	github.com/texttheater/golang-levenshtein v1.0.1 // indirect
 	github.com/tidwall/sjson v1.2.5 // indirect
+	github.com/topicuskeyhub/sdk-go v0.48.0 // indirect
 	github.com/volcengine/volc-sdk-golang v1.0.225 // indirect
 	github.com/volcengine/volcengine-go-sdk v1.1.46 // indirect
 	github.com/x448/float16 v0.8.4 // indirect

@@ -1,0 +1,57 @@
+Release the KeyHub fork of External Secrets Operator
+====================================================
+
+Re-applies the KeyHub provider on top of an upstream release tag and ships a
+KeyHub-only container image.
+
+Versions:
+
+  UPSTREAM=v2.5.0            # upstream tag to base on
+  REL=${UPSTREAM}-keyhub.1   # fork release tag (bump .1 -> .2 for rebuilds)
+
+1. Branch from the upstream tag:
+
+     git fetch upstream --tags
+     git switch -c ${UPSTREAM}-keyhub ${UPSTREAM}
+
+2. Cherry-pick the KeyHub commit(s) from the previous keyhub branch:
+
+     git cherry-pick <keyhub-commit>
+     # resolve conflicts (usually only go.mod ordering / the SecretStoreProvider field)
+
+3. Resolve dependencies:
+
+     (cd providers/v1/keyhub && go mod tidy)
+     go mod tidy
+
+4. Regenerate deepcopy, CRDs, bundle and API docs:
+
+     make generate
+     bash hack/api-docs/generate.sh docs/api/spec.md
+
+5. Build (keyhub-only) and verify the provider is registered:
+
+     go build -tags keyhub -o /tmp/eso-keyhub main.go
+     go tool nm /tmp/eso-keyhub | grep -c providers/v1/keyhub   # must be > 0
+
+6. Commit:
+
+     git add -A && git commit -sm "feat(provider/keyhub): re-apply KeyHub provider on ${UPSTREAM}"
+
+7. Build & push the KeyHub-only image:
+
+     DOCKER_BUILD_ARGS="--platform linux/amd64" \
+       PROVIDER=keyhub \
+       IMAGE_NAME=docker.topicus.education/external-secrets \
+       IMAGE_TAG=${REL} \
+       make docker.build
+
+     docker tag docker.topicus.education/external-secrets:${REL} ghcr.io/sboschman/external-secrets:${REL}
+     docker push docker.topicus.education/external-secrets:${REL}
+     docker push ghcr.io/sboschman/external-secrets:${REL}
+
+8. Push branch and tag:
+
+     git push --set-upstream origin ${UPSTREAM}-keyhub
+     git tag -a ${REL} -m "Release ${REL}"
+     git push origin ${REL}
