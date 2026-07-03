@@ -130,6 +130,8 @@ github.com/IBM/go-sdk-core/v5 v5.21.0 h1:DUnYhvC4SoC8T84rx5omnhY3+xcQg/Whyoa3mDP
 github.com/IBM/go-sdk-core/v5 v5.21.0/go.mod h1:Q3BYO6iDA2zweQPDGbNTtqft5tDcEpm6RTuqMlPcvbw=
 github.com/IBM/secrets-manager-go-sdk/v2 v2.0.16 h1:jcA6ksXdofWCGk8Uq3XQsf1daSgbQYAh2cnNSEJf+ac=
 github.com/IBM/secrets-manager-go-sdk/v2 v2.0.16/go.mod h1:Jj/gYPVjg2O/QF0ov+Lh45Tt+paz4ZoVpkTToojZguw=
+github.com/KimMachineGun/automemlimit v0.7.5 h1:RkbaC0MwhjL1ZuBKunGDjE/ggwAX43DwZrJqVwyveTk=
+github.com/KimMachineGun/automemlimit v0.7.5/go.mod h1:QZxpHaGOQoYvFhv/r4u3U0JTC2ZcOwbSr11UZF46UBM=
 github.com/Knetic/govaluate v3.0.1-0.20171022003610-9aa49832a739+incompatible/go.mod h1:r7JcOSlj0wfOMncg0iLm8Leh48TZaKVeNIfJntJ2wa0=
 github.com/Masterminds/goutils v1.1.1 h1:5nUrii3FMTL5diU80unEVvNevw1nH4+ZV4DSLVJLSYI=
 github.com/Masterminds/goutils v1.1.1/go.mod h1:8cTjp+g8YejhMuvIA5y2vz3BpJxksy863GQaJW2MFNU=
@@ -921,6 +923,8 @@ github.com/pascaldekloe/goe v0.0.0-20180627143212-57f6aae5913c/go.mod h1:lzWF7FI
 github.com/pascaldekloe/goe v0.1.0/go.mod h1:lzWF7FIEvWOWxwDKqyGYQf6ZUaNfKdP144TG7ZOy1lc=
 github.com/passbolt/go-passbolt v0.8.0-beta.1 h1:61EHrzrK9vC7uKQcVgyo5AyTj1CcFUgcJuXEOiYrIK8=
 github.com/passbolt/go-passbolt v0.8.0-beta.1/go.mod h1:2xaQdmCPtiwzJwy/KL0NMjtnkTnGknCi/UlVd1NSx4I=
+github.com/pbnjay/memory v0.0.0-20210728143218-7b4eea64cf58 h1:onHthvaw9LFnH4t2DcNVpwGmV9E1BkGknEliJkfwQj0=
+github.com/pbnjay/memory v0.0.0-20210728143218-7b4eea64cf58/go.mod h1:DXv8WO4yhMYhSNPKjeNKa5WY9YCIEBRbNzFFPJbWO6Y=
 github.com/performancecopilot/speed/v4 v4.0.0/go.mod h1:qxrSyuDGrTOWfV+uKRFhfxw6h/4HXRGUiZiufxo49BM=
 github.com/pgavlin/fx v0.1.6 h1:r9jEg69DhNoCd3Xh0+5mIbdbS3PqWrVWujkY76MFRTU=
 github.com/pgavlin/fx v0.1.6/go.mod h1:KWZJ6fqBBSh8GxHYqwYCf3rYE7Gp2p0N8tJp8xv9u9M=

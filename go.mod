@@ -117,6 +117,7 @@ require (
 require github.com/1Password/connect-sdk-go v1.5.3 // indirect
 
 require (
+	github.com/KimMachineGun/automemlimit v0.7.5
 	github.com/external-secrets/external-secrets/apis v0.0.0
 	github.com/external-secrets/external-secrets/generators/v1/acr v0.0.0-00010101000000-000000000000
 	github.com/external-secrets/external-secrets/generators/v1/cloudsmith v0.0.0-00010101000000-000000000000
@@ -334,6 +335,7 @@ require (
 	github.com/opentracing/basictracer-go v1.1.0 // indirect
 	github.com/ovh/okms-sdk-go v0.5.1 // indirect
 	github.com/passbolt/go-passbolt v0.8.0-beta.1 // indirect
+	github.com/pbnjay/memory v0.0.0-20210728143218-7b4eea64cf58 // indirect
 	github.com/pgavlin/fx v0.1.6 // indirect
 	github.com/pgavlin/fx/v2 v2.0.12 // indirect
 	github.com/pjbgf/sha1cd v0.6.0 // indirect

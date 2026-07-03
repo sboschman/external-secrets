@@ -20,6 +20,8 @@ package main
 import (
 	"github.com/external-secrets/external-secrets/cmd/controller"
 
+	_ "github.com/KimMachineGun/automemlimit/memlimit" // Automatically set GOMEMLIMIT to match the cgroup memory limit
+
 	_ "github.com/external-secrets/external-secrets/pkg/register" // Register all providers and generators
 )
 
